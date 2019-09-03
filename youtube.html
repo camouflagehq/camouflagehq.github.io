@@ -7,11 +7,11 @@
     <h1>YouTube - Incognito</h1>
     <iframe height="500px" id="incognito-iframe" width="100%"></iframe>
     <script>
-      var loc = window.location.toString(),
-      params = loc.split('?')[1],
-      iframe = document.getElementById('incognito-iframe');
+      var loc = window.location.toString();
+      var params = loc.split('?')[1];
+      var iframe = document.getElementById('incognito-iframe');
 
-      iframe.src = 'https://www.youtube.com?' + params;​​​​​​​​​​​​​​​​
+      iframe.src = 'https://www.youtube.com?' + params;
     </script>
   </body>
 </html>
