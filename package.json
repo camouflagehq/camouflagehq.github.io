@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "Amaury Martiny <amaury.martiny@protonmail.com>",
   "description": "Privacy-friendly online navigation",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "private": true,
   "repository": "https://github.com/amaurymartiny/incognito",
   "scripts": {
