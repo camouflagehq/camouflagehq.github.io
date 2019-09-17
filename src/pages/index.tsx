@@ -11,9 +11,10 @@ export interface IndexProps {
 export default function Index({ location }: IndexProps) {
   const queryParams = queryString.parse(location.search);
   const url =
-    queryParams.url && typeof queryParams.url === 'string'
+    queryParams.url &&
+    (typeof queryParams.url === 'string'
       ? queryParams.url
-      : queryParams.url[0];
+      : queryParams.url[0]);
 
   return (
     <>
