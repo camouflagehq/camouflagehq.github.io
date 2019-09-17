@@ -8,8 +8,9 @@
   "repository": "https://github.com/amaurymartiny/incognito",
   "scripts": {
     "build": "gatsby build",
-    "start": "gatsby develop",
     "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+    "start": "gatsby develop",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
   "dependencies": {
@@ -21,6 +22,7 @@
     "semantic-ui-react": "^0.88.1"
   },
   "devDependencies": {
-    "gatsby-plugin-typescript": "^2.1.8"
+    "gatsby-plugin-typescript": "^2.1.8",
+    "gh-pages": "^2.1.1"
   }
 }
