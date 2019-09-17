@@ -10,19 +10,15 @@ export interface IndexProps {
 
 export default function Index({ location }: IndexProps) {
   const queryParams = queryString.parse(location.search);
+  const url =
+    queryParams.url && typeof queryParams.url === 'string'
+      ? queryParams.url
+      : queryParams.url[0];
 
   return (
     <>
-      <Hamburger />
-      {queryParams.url && (
-        <Iframe
-          url={
-            typeof queryParams.url === 'string'
-              ? queryParams.url
-              : queryParams.url[0]
-          }
-        />
-      )}
+      <Hamburger url={url} />
+      {url && <Iframe url={url} />}
     </>
   );
 }
