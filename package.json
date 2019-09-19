@@ -18,10 +18,10 @@
     "query-string": "^6.8.3",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "semantic-ui-css": "^2.4.1",
-    "semantic-ui-react": "^0.88.1"
+    "tailwindcss": "^1.1.2"
   },
   "devDependencies": {
+    "gatsby-plugin-postcss": "^2.1.7",
     "gatsby-plugin-typescript": "^2.1.8",
     "gh-pages": "^2.1.1"
   }

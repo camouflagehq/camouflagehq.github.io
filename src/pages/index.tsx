@@ -1,6 +1,5 @@
 import queryString from 'query-string';
 import React from 'react';
-import 'semantic-ui-css/semantic.min.css';
 
 import { Hamburger, Iframe } from '../components';
 

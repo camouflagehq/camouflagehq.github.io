@@ -1,4 +1,4 @@
 module.exports = {
   pathPrefix: '/incognitoweb',
-  plugins: ['gatsby-plugin-typescript']
+  plugins: ['gatsby-plugin-postcss', 'gatsby-plugin-typescript']
 };

@@ -1,28 +1,21 @@
-import React, { useEffect, useState } from 'react';
-import { Button, Popup } from 'semantic-ui-react';
+import React from 'react';
 
 export interface HamburgerProps {
   url?: string;
 }
 
 export function Hamburger({ url }: HamburgerProps) {
-  const [tooltip, setTooltip] = useState(true);
-  useEffect(() => {
-    setTooltip(true);
-    setTimeout(() => {
-      setTooltip(false);
-    }, 3500);
-  }, [url]);
-
   return (
-    <Popup
-      content={`You are now browsing ${url} in Camouflage.`}
-      flowing
-      inverted
-      open={tooltip}
-      position="right center"
-      size="small"
-      trigger={<Button className="hamburger" circular icon="bars" secondary />}
-    />
+    <button
+      className="
+        font-bold text-white
+        p-3 rounded-full
+        bg-gray-800 hover:opacity-75
+        absolute bottom-0 left-0 m-5
+        z-10"
+      title={url && `You're browsing in Camouflage: ${url}`}
+    >
+      &nbsp;&nbsp;C&nbsp;&nbsp;
+    </button>
   );
 }

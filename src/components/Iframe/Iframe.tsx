@@ -5,5 +5,7 @@ export interface IframeProps {
 }
 
 export function Iframe({ url }: IframeProps) {
-  return <iframe src={url} title={url}></iframe>;
+  return (
+    <iframe className="border-none fixed h-full w-full" src={url} title={url} />
+  );
 }

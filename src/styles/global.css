@@ -1,18 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #___gatsby,
 #gatsby-focus-wrapper {
   height: 100%;
   width: 100%;
-}
-
-iframe {
-  border: none;
-  height: 100%;
-  position: fixed;
-  width: 100%;
-}
-
-.hamburger {
-  bottom: 20px;
-  position: fixed;
-  left: 20px;
 }
