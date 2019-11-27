@@ -4,7 +4,7 @@ export interface HamburgerProps {
   url?: string;
 }
 
-export function Hamburger({ url }: HamburgerProps) {
+export function Hamburger({ url }: HamburgerProps): React.ReactElement {
   return (
     <button
       className="

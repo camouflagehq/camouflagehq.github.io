@@ -4,16 +4,16 @@ import React from 'react';
 import { Hamburger, Iframe } from '../components';
 
 export interface IndexProps {
-  location: any;
+  location: Location;
 }
 
-export default function Index({ location }: IndexProps) {
+export default function Index({ location }: IndexProps): React.ReactElement {
   const queryParams = queryString.parse(location.search);
-  const url =
-    queryParams.url &&
-    (typeof queryParams.url === 'string'
+  const url = queryParams.url
+    ? typeof queryParams.url === 'string'
       ? queryParams.url
-      : queryParams.url[0]);
+      : queryParams.url[0]
+    : undefined;
 
   return (
     <>
